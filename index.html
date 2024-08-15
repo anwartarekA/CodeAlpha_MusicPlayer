@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quran</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="all-view">
+          <div class="header">
+            <i class="fas fa-music"></i>
+            <p>Now Playing</p>
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="details">
+            <img src="images/img.png" alt="" />
+            <p class="soura-name">soura kaf</p>
+            <p class="reader">maher</p>
+          </div>
+          <div class="controls">
+            <div class="duration">
+              <span class="begin"></span>
+              <span class="end-duration"></span>
+            </div>
+            <input
+              type="range"
+              value="0"
+              max="100"
+              min="0"
+              class="soura-time"
+            />
+            <div class="play-next-prev">
+              <button class="prev">
+                <i class="fas fa-backward-step"></i>
+              </button>
+              <button class="play">
+                <i class="fas fa-play"></i>
+              </button>
+              <button class="next">
+                <i class="fas fa-forward-step"></i>
+              </button>
+            </div>
+            <div class="play-all">
+              Play All
+              <span>
+                <i class="fas fa-rotate"></i>
+              </span>
+            </div>
+            <div class="volume">
+              <p class="current-volume">50</p>
+              <i class="fa-solid fa-volume-xmark"></i>
+              <input type="range" class="volumeValue" value="50" min="0" max="100" />
+            </div>
+          </div>
+          <div class="playlist-div">
+            <div class="header">
+              <i class="fas fa-music"></i>
+              <p>Playlist</p>
+              <i class="fas fa-times"></i>
+            </div>
+            <div class="playlist">
+              <!-- <div class="soura">
+                <span>1-</span>
+                <p>first soura</p>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="audio.js" type="module"></script>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>

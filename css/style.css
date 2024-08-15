@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white : white;
+    --blue : #00316E;
+}
+html{
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #00224B;
+}
+.container .box{
+    position: relative;
+    width: 500px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: var(--white);
+    overflow: hidden;
+}
+.all-view .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color : var(--blue);
+    padding: 0px 0 20px 0;
+    margin-top : 10px;
+}
+.header .fas{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.header p{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.details{
+    text-align: center;
+}
+.details img{
+    width: 350px;
+    border-radius: 5px;
+    border: 1px solid var(--blue);
+}
+.details .soura-name{
+    color: var(--blue);
+    font-size: 1.5rem;
+}
+.details .reader{
+    color: #1A43BF;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+.controls{
+    background: #00224B;
+    border-radius: 50px 50px 0 0;
+    padding: 1rem 1rem;
+}
+.duration{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+}
+.duration span{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 5px 0 5px;
+}
+input[type=range]{
+    width: 50%;
+    height: 2px;
+    margin: 5px auto;
+    appearance: none;
+    display: block;
+    cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb{
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #1A43BF;
+}
+.controls .soura-time{
+    width: 80%;
+}
+.play-next-prev{
+    width: 50%;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 5px;
+}
+.play-next-prev button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    background: transparent;
+}
+.play-next-prev button i{
+    font-size: 1.5rem;
+}
+.play-next-prev .play{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #1A43BF;
+    color: var(--white);
+}
+.play-all{
+    width: fit-content;
+    background: var(--white);
+    padding: 10px 5px;
+    margin: 15px auto;
+    text-align: center;
+    font-size: 1rem;
+    font-size: 500;
+    cursor: pointer;
+}
+.play-all span{
+    margin-left: 10px;
+}
+.volume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.volume input[type=range]{
+    margin: 0;
+}
+.current-volume{
+    color: var(--white);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #1A43BF;
+    cursor: pointer;
+}
+.volume i{
+    color: var(--white);
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #af5700;
+    cursor: pointer;
+}
+.playlist-div{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,.9);
+    padding: 25px;
+    transform: translateX(-100%);
+    transition: all 0.5s;
+}
+.playlist-div .fas,
+.header p{
+    color: var(--white);
+}
+.playlist-div .header{
+    border-bottom: 1.5px solid var(--white);
+    padding: 10px 0 25px 0;
+}
+.playlist-div .playlist .soura{
+    color: var(--white);
+    display:  flex;
+    padding: 30px 0;
+    border-bottom: 1.5px solid var(--white);
+    cursor: pointer;
+}
+.soura span{
+    padding: 0 10px 0 0;
+    font-size: 1.15rem;
+}
+.soura p{
+    font-size: 1.15rem;
+}
+.playlist-div .playlist{
+    height: 80vh;
+    width: 100%;
+    overflow-y: auto
+}
